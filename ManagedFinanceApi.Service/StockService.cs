@@ -13,7 +13,7 @@ namespace ManagedFinanceApi.Service
     /// </summary>
     public class StockService
     {
-        private IStockSearch _stockSearch;
+        private readonly IStockSearch _stockSearch;
 
         /// <summary>
         /// ctor, to be used with a DI container
@@ -24,6 +24,13 @@ namespace ManagedFinanceApi.Service
             _stockSearch = stockSearch;
         }
 
-        public IEnumerable<Stock> SearchStocks()
+        /// <summary>
+        /// Searches the data sources for a list of all the matching stocks for a given search term
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<Stock>> SearchStocks(string searchTerm)
+        {
+            return await _stockSearch.SearchStocksAsync(searchTerm);
+        }
     }
 }

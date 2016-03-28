@@ -107,7 +107,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="IStockSearch.cs" />
+    <Compile Include="Yahoo\Mapping\StockMapper.cs" />
     <Compile Include="Yahoo\StockSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\ManagedFinanceApi.Data.rd.xml" />
@@ -116,6 +118,10 @@
     <Folder Include="Google\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Extensions\Extensions.csproj">
+      <Project>{842442ff-0434-47bd-ae2e-f8f2dae938ea}</Project>
+      <Name>Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
       <Project>{5D86F91B-B9DE-4EBB-8BD8-33F66A560172}</Project>
       <Name>ManagedFinanceApi.Models</Name>

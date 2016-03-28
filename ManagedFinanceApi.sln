@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedFinanceApi.Data", "ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj", "{7E105EA0-6175-441E-B0F6-2B36A32B5A93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A30A2EE8-B62B-4C88-B653-1CAB32D92863}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{842442FF-0434-47BD-AE2E-F8F2DAE938EA}"
 EndProject

@@ -10,7 +10,7 @@ namespace ManagedFinanceApi.Models
     /// <summary>
     /// Represents a stock
     /// </summary>
-    public class Stock
+    public class Stock: BaseModel
     {
         /// <summary>
         /// The stock code/ticker
@@ -32,7 +32,5 @@ namespace ManagedFinanceApi.Models
         /// The exhange name this stock belongs too
         /// </summary>
         public string ExchangeName { get; set; }
-
-
     }
 }

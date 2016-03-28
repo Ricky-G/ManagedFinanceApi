@@ -17,6 +17,6 @@ namespace ManagedFinanceApi.Data
         /// </summary>
         /// <param name="searchTerm"></param>
         /// <returns></returns>
-        IEnumerable<Stock> SearchStocks(string searchTerm);
+        Task<IEnumerable<Stock>> SearchStocksAsync(string searchTerm);
     }
 }
