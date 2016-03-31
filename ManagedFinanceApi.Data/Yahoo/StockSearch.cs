@@ -22,8 +22,8 @@ namespace ManagedFinanceApi.Data.Yahoo
             var yahooUrl = new Uri(yahooUrlString);
 
             //Get data
-            //TODO: get the mapping right
-            var results = await yahooUrl.GetFromJsonResponseAsync<IEnumerable<Stock>>(StockMapper.StockSearchMapper);
+            var rawJson = await yahooUrl.GetAnnonymousTypeFromJsonResponseAsync();
+            var results = rawJson["ResultSet"]["Result"].Children().GetFromJson<Stock>();
 
             //Filter only stocks
             var stocks = results.AlwaysList().Where(s => s.ModelType == "Equity");

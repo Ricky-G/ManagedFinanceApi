@@ -4,7 +4,8 @@ using System.IO;
 using System.Threading.Tasks;
 using Windows.Web.Http;
 using Newtonsoft.Json;
-using UniversalWindows.Extensions.JsonExtensions;
+using Newtonsoft.Json.Linq;
+using UniversalWindows.Extensions.JsonHelpers;
 
 namespace UniversalWindows.Extensions
 {
@@ -67,6 +68,18 @@ namespace UniversalWindows.Extensions
             var obj = JsonSerializer.Create().Deserialize<T>(reader);
 
             return obj;
+        }
+
+        /// <summary>
+        /// Calls the url and returns a json object
+        /// </summary>
+        /// <param name="url">The url to query to get the json response</param>
+        public static async Task<JObject> GetAnnonymousTypeFromJsonResponseAsync(this Uri url)
+        {
+            var response = await GetResponseAsync(url);
+            var jsonObject = JObject.Parse(response);
+
+            return jsonObject;
         }
     }
 }

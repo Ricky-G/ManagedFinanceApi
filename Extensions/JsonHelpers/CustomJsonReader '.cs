@@ -2,7 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
-namespace UniversalWindows.Extensions.JsonExtensions
+namespace UniversalWindows.Extensions.JsonHelpers
 {
     public class CustomJsonReader : JsonTextReader
     {

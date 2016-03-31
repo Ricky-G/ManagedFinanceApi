@@ -108,9 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionExtensions.cs" />
-    <Compile Include="JsonExtensions\CustomerJsonWriter.cs" />
-    <Compile Include="JsonExtensions\CustomJsonReader %27.cs" />
+    <Compile Include="JsonHelpers\CustomerJsonWriter.cs" />
+    <Compile Include="JsonHelpers\CustomJsonReader %27.cs" />
     <Compile Include="StringExtensions.cs" />
+    <Compile Include="JsonExtensions.cs" />
     <Compile Include="WebExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Extensions.rd.xml" />
