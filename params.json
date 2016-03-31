@@ -1,0 +1,6 @@
+{
+  "name": "Managed Finance Api",
+  "tagline": "A .NET C# universal/portable library responsible for fetching all things financial information from various sources on the web.",
+  "body": "# ManagedFinanceApi\r\nA .NET C# universal/portable library responsible for fetching all things financial information from various sources on the web.\r\n\r\nInitially the data sources will be Yahoo & Google finance, with more to come later on.\r\n\r\nThis library should be compatible to run on any Windows device.  It can be included to run on an Windows app or hosted as an API on IIS\r\n\r\nThe vision for this library is to fetch data and/or analyse:\r\n1.\tStock lookup and stock prices\r\n2.\tStock historical prices\r\n3.\tStock information charting\r\n4.\tStock news\r\n5.\tStock research\r\n6.\tExchange information and news\r\n7.\tStock screener\r\n8.\tPortfolio management\r\n9.\tFuture stock price prediction engine (based on past pricing, dividend timing and heuristic news scrapping from the web)\r\n\r\nOthers such as options, bonds, fx, etc to be added as the library evolves.\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
