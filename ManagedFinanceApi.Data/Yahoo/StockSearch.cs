@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ManagedFinanceApi.Data.Yahoo.Mapping;
 using ManagedFinanceApi.Models;
 using PortableExtensions;
 
@@ -22,7 +23,7 @@ namespace ManagedFinanceApi.Data.Yahoo
 
             //Get data
             var rawJson = await yahooUrl.GetAnnonymousTypeFromJsonResponseAsync();
-            var results = rawJson["ResultSet"]["Result"].Children().GetFromJson<Stock>();
+            var results = rawJson["ResultSet"]["Result"].Children().GetFromJson<Stock>(StockMapper.StockSearchMapper);
 
             //Filter only stocks
             var stocks = results.AlwaysList().Where(s => s.ModelType == "Equity");

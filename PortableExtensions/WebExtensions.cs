@@ -56,19 +56,19 @@ namespace PortableExtensions
         /// <param name="url">The url to query to get the json response</param>
         /// <param name="jsonMapper">The mapper to use to map from the json response to the desired poco T</param>
         /// <returns>The object of type T from the json response; if there was an exception then a default of T is returned </returns>
-        public static async Task<T> GetFromJsonResponseAsync<T>(this Uri url, Dictionary<string, string> jsonMapper)
-        {
-            var response = await GetResponseAsync(url);
-            if (response.IsNullOrEmpty())
-            {
-                return default(T);
-            }
+        //public static async Task<T> GetFromJsonResponseAsync<T>(this Uri url, Dictionary<string, string> jsonMapper)
+        //{
+        //    var response = await GetResponseAsync(url);
+        //    if (response.IsNullOrEmpty())
+        //    {
+        //        return default(T);
+        //    }
 
-            var reader = new CustomJsonReader(new StringReader(response), jsonMapper);
-            var obj = JsonSerializer.Create().Deserialize<T>(reader);
+        //    var reader = new CustomJsonReader(new StringReader(response), jsonMapper);
+        //    var obj = JsonSerializer.Create().Deserialize<T>(reader);
 
-            return obj;
-        }
+        //    return obj;
+        //}
 
         /// <summary>
         /// Calls the url and returns a json object

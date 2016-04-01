@@ -41,6 +41,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="IStockSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yahoo\Mapping\StockMapper.cs" />
     <Compile Include="Yahoo\StockSearch.cs" />
   </ItemGroup>
   <ItemGroup>
