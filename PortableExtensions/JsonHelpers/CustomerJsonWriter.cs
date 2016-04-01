@@ -2,7 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
-namespace UniversalWindows.Extensions.JsonHelpers
+namespace PortableExtensions.JsonHelpers
 {
     public class CustomJsonWriter : JsonTextWriter
     {

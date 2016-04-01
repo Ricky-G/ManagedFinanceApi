@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace UniversalWindows.Extensions
+namespace PortableExtensions
 {
     /// <summary>
     /// Extension methods related to collections

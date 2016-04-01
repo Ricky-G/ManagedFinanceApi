@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ManagedFinanceApi.Data
+﻿namespace ManagedFinanceApi.Data
 {
     /// <summary>
-    /// Holds all the constants
+    ///     Holds all the constants
     /// </summary>
     public static class Constants
     {
         /// <summary>
-        /// All the data end points for Yahoo
+        ///     All the data end points for Yahoo
         /// </summary>
         public static class YahooDataEndPoints
         {

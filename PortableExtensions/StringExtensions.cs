@@ -1,4 +1,4 @@
-﻿namespace UniversalWindows.Extensions
+﻿namespace PortableExtensions
 {
     /// <summary>
     /// Extension methods for all things string related

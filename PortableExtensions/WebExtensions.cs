@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net.Http;
 using System.Threading.Tasks;
-using Windows.Web.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UniversalWindows.Extensions.JsonHelpers;
+using PortableExtensions.JsonHelpers;
 
-namespace UniversalWindows.Extensions
+namespace PortableExtensions
 {
     /// <summary>
     /// Extension methods for all web/http related

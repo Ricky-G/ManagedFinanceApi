@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ManagedFinanceApi.Data.Yahoo.Mapping;
 using ManagedFinanceApi.Models;
-using UniversalWindows.Extensions;
+using PortableExtensions;
 
 namespace ManagedFinanceApi.Data.Yahoo
 {
     public class StockSearch : IStockSearch
     {
         /// <summary>
-        /// Searchs the yahoo webservice for all matching stocks for the given search term
+        ///     Searchs the yahoo webservice for all matching stocks for the given search term
         /// </summary>
         /// <param name="searchTerm">The search term to search for</param>
         /// <returns>The matching stocks</returns>
