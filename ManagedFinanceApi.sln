@@ -22,6 +22,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedFinanceApi.Data", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableExtensions.Tests", "PortableExtensions.Tests\PortableExtensions.Tests.csproj", "{A176446F-D3BA-41C6-90FD-5BC2A1434456}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionFiles", "_SolutionFiles", "{4EEE0D5B-6B56-48A2-916E-4859A0DF0F15}"
+	ProjectSection(SolutionItems) = preProject
+		Sources.txt = Sources.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

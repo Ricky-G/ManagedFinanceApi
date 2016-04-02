@@ -1,0 +1,4 @@
+Charting:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+http://charts.reuters.com/reuters/enhancements/chartapi/chart_api.asp?width=458&height=292&symbol=NZX.NZ&duration=1000&lowers=volume&headertype=none
+duration = number of days

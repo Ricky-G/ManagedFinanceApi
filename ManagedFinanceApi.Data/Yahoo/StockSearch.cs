@@ -17,17 +17,29 @@ namespace ManagedFinanceApi.Data.Yahoo
         /// <returns>The matching stocks</returns>
         public async Task<IEnumerable<Stock>> SearchStocksAsync(string searchTerm)
         {
-            //Get the right url
-            var yahooUrlString = string.Format(Constants.YahooDataEndPoints.StockSearchUrl, searchTerm);
-            var yahooUrl = new Uri(yahooUrlString);
+            var yahooStockSearchUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockSearchUrl, searchTerm));
 
             //Get data
-            var rawJson = await yahooUrl.GetAnnonymousTypeFromJsonResponseAsync();
+            var rawJson = await yahooStockSearchUrl.GetAnnonymousTypeFromJsonResponseAsync();
             var results = rawJson["ResultSet"]["Result"].Children().GetFromJson<Stock>(StockMapper.StockSearchMapper);
 
             //Filter only stocks
             var stocks = results.AlwaysList().Where(s => s.ModelType == "Equity");
             return stocks;
+        }
+
+        /// <summary>
+        /// Gets the stocks quote information
+        /// </summary>
+        /// <param name="stockCode"></param>
+        /// <returns></returns>
+        public async Task<StockQuote> GetStockQuoteAsync(string stockCode)
+        {
+            //Get the right url
+            var yahooStockQuoteUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockQuoteUrl, stockCode));
+
+            var stockQuote = await yahooStockQuoteUrl.GetFromJsonResponseAsync<StockQuote>();
+            return stockQuote;
         }
     }
 }
