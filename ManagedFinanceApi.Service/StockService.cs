@@ -14,13 +14,13 @@ namespace ManagedFinanceApi.Service
     /// </summary>
     public class StockService
     {
-        private readonly IStockSearch _stockSearch;
+        private readonly IStockInformation _stockSearch;
 
         /// <summary>
         /// ctor, to be used with a DI container
         /// </summary>
         /// <param name="stockSearch"></param>
-        public StockService(IStockSearch stockSearch)
+        public StockService(IStockInformation stockSearch)
         {
             _stockSearch = stockSearch;
         }

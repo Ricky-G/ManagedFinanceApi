@@ -9,13 +9,13 @@ namespace ManagedFinanceApi.Service.Tests
     [TestClass]
     public class StockServiceTests
     {
-        private IStockSearch _stockSearch;
+        private IStockInformation _stockSearch;
         private StockService _stockService;
 
         [TestInitialize]
         public void StartUp()
         {
-            _stockSearch = new StockSearch();
+            _stockSearch = new StockInformation();
             _stockService = new StockService(_stockSearch);
         }
 

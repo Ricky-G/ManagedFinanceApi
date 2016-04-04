@@ -8,7 +8,7 @@ using PortableExtensions;
 
 namespace ManagedFinanceApi.Data.Yahoo
 {
-    public class StockSearch : IStockSearch
+    public class StockInformation : IStockInformation
     {
         /// <summary>
         ///     Searchs the yahoo webservice for all matching stocks for the given search term
