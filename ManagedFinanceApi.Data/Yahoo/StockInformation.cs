@@ -31,15 +31,17 @@ namespace ManagedFinanceApi.Data.Yahoo
         /// <summary>
         /// Gets the stocks quote information
         /// </summary>
-        /// <param name="stockCode"></param>
+        /// <param name="stockCodes">A list of all the stock codes to fetch</param>
         /// <returns></returns>
-        public async Task<StockQuote> GetStockQuoteAsync(string stockCode)
+        public async Task<IEnumerable<StockQuote>> GetStockQuoteAsync(IEnumerable<string> stockCodes)
         {
-            //Get the right url
-            var yahooStockQuoteUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockQuoteUrl, stockCode));
+            var yahooStockQuoteUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockQuoteUrl, stockCodes.ToCsvString()));
 
-            var stockQuote = await yahooStockQuoteUrl.GetFromJsonResponseAsync<StockQuote>();
-            return stockQuote;
+            //Get data
+            var rawJson = await yahooStockQuoteUrl.GetAnnonymousTypeFromJsonResponseAsync();
+            var results = rawJson["query"]["results"]["quote"].Children().GetFromJson<StockQuote>();
+
+            return results;
         }
     }
 }

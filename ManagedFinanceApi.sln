@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1F58BD00-F0DF-47B0-A89A-49C8097E03E7}"
 EndProject
@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionFiles", "_Solution
 	ProjectSection(SolutionItems) = preProject
 		Sources.txt = Sources.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{878BB5DD-3200-423D-A24A-7D53649F6F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedFinanceApi.Wpf.DemoApp", "ManagedFinanceApi.Wpf.DemoApp\ManagedFinanceApi.Wpf.DemoApp.csproj", "{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,22 @@ Global
 		{A176446F-D3BA-41C6-90FD-5BC2A1434456}.Release|x64.Build.0 = Release|Any CPU
 		{A176446F-D3BA-41C6-90FD-5BC2A1434456}.Release|x86.ActiveCfg = Release|Any CPU
 		{A176446F-D3BA-41C6-90FD-5BC2A1434456}.Release|x86.Build.0 = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|ARM.Build.0 = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|x64.Build.0 = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Debug|x86.Build.0 = Debug|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|ARM.Build.0 = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|x64.ActiveCfg = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|x64.Build.0 = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|x86.ActiveCfg = Release|Any CPU
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,5 +163,6 @@ Global
 		{1FB31E95-DE68-4B34-9341-31331E295467} = {A30A2EE8-B62B-4C88-B653-1CAB32D92863}
 		{5741B6A6-90D1-4FAA-8471-E6BB58109391} = {1F58BD00-F0DF-47B0-A89A-49C8097E03E7}
 		{A176446F-D3BA-41C6-90FD-5BC2A1434456} = {1F58BD00-F0DF-47B0-A89A-49C8097E03E7}
+		{11F17CC1-1EB5-4747-8167-A8CE663CC3C5} = {878BB5DD-3200-423D-A24A-7D53649F6F8D}
 	EndGlobalSection
 EndGlobal

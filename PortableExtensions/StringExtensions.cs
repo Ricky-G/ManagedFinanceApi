@@ -1,4 +1,6 @@
-﻿namespace PortableExtensions
+﻿using System.Collections.Generic;
+
+namespace PortableExtensions
 {
     /// <summary>
     /// Extension methods for all things string related
@@ -23,6 +25,16 @@
         public static bool IsNotNullOrEmpty(this string str)
         {
             return !string.IsNullOrEmpty(str);
+        }
+
+        /// <summary>
+        /// Converts to a comma delimeted string
+        /// </summary>
+        /// <param name="strs">a List of all the strings</param>
+        /// <returns></returns>
+        public static string ToCsvString(this IEnumerable<string> strs)
+        {
+            return string.Join(",", strs.AlwaysList());
         }
     }
 }

@@ -29,9 +29,18 @@ namespace ManagedFinanceApi.Service
         /// Searches the data sources for a list of all the matching stocks for a given search term
         /// </summary>
         /// <returns></returns>
-        public async Task<IEnumerable<Stock>> SearchStocks(string searchTerm)
+        public async Task<IEnumerable<Stock>> SearchStocksAsync(string searchTerm)
         {
             return await _stockSearch.SearchStocksAsync(searchTerm);
+        }
+
+        /// <summary>
+        /// Searches the data sources for a list of all the matching stocks for a given search term
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<StockQuote>> GetStockQuoteAsync(IEnumerable<string> stockCodes)
+        {
+            return await _stockSearch.GetStockQuoteAsync(stockCodes);
         }
     }
 }

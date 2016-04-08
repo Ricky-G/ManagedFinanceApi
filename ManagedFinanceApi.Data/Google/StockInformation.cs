@@ -20,12 +20,7 @@ namespace ManagedFinanceApi.Data.Google
             throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// Gets the stocks quote information freom the google finance web site
-        /// </summary>
-        /// <param name="stockCode"></param>
-        /// <returns></returns>
-        public async Task<StockQuote> GetStockQuoteAsync(string stockCode)
+        public Task<IEnumerable<StockQuote>> GetStockQuoteAsync(IEnumerable<string> stockCodes)
         {
             throw new NotImplementedException();
         }

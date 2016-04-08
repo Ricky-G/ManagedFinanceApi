@@ -15,5 +15,10 @@ namespace ManagedFinanceApi.Data.Yahoo.Mapping
             {"ExchangeName", "exchDisp"},
             {"ModelType", "typeDisp"}
         };
+
+        public static Dictionary<string, string> StockQuoteMapper = new Dictionary<string, string>
+        {
+            {"ChangePercent", "Change_PercentChange"}
+        };
     }
 }

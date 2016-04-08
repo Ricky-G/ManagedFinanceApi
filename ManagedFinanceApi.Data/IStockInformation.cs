@@ -19,8 +19,8 @@ namespace ManagedFinanceApi.Data
         /// <summary>
         ///     Gets the stocks quote information
         /// </summary>
-        /// <param name="stockCode"></param>
+        /// <param name="stockCodes">A list of all the stock codes to fetch</param>
         /// <returns></returns>
-        Task<StockQuote> GetStockQuoteAsync(string stockCode);
+        Task<IEnumerable<StockQuote>> GetStockQuoteAsync(IEnumerable<string> stockCodes);
     }
 }

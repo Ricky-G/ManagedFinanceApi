@@ -9,7 +9,6 @@
         public string AverageDailyVolume { get; set; }
         public string Bid { get; set; }
         public string BookValue { get; set; }
-        public string Change_PercentChange { get; set; }
         public string Change { get; set; }
         public string Currency { get; set; }
         public string LastTradeDate { get; set; }
@@ -19,7 +18,7 @@
         public string YearLow { get; set; }
         public string YearHigh { get; set; }
         public string MarketCapitalization { get; set; }
-        public string EBITDA { get; set; }
+        public string Ebitda { get; set; }
         public string ChangeFromYearLow { get; set; }
         public string PercentChangeFromYearLow { get; set; }
         public string ChangeFromYearHigh { get; set; }
@@ -36,10 +35,10 @@
         public string PriceSales { get; set; }
         public string PriceBook { get; set; }
         public string ExDividendDate { get; set; }
-        public string PERatio { get; set; }
-        public string PEGRatio { get; set; }
-        public string PriceEPSEstimateCurrentYear { get; set; }
-        public string PriceEPSEstimateNextYear { get; set; }
+        public string PeRatio { get; set; }
+        public string PegRatio { get; set; }
+        public string PriceEpsEstimateCurrentYear { get; set; }
+        public string PriceEpsEstimateNextYear { get; set; }
         public string Symbol { get; set; }
         public string ShortRatio { get; set; }
         public string LastTradeTime { get; set; }
