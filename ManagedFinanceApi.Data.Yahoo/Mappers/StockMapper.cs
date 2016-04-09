@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ManagedFinanceApi.Data.Yahoo.Mapping
+namespace ManagedFinanceApi.Data.Yahoo.Mappers
 {
     /// <summary>
     ///     Mapping class that holds all the static mapping definitions to convert from yahoo json to our model

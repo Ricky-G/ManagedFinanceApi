@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ManagedFinanceApi.Data.Yahoo.Mapping;
+using ManagedFinanceApi.Data.Interfaces;
+using ManagedFinanceApi.Data.Yahoo.Mappers;
 using ManagedFinanceApi.Models;
 using PortableExtensions;
 
@@ -17,7 +18,7 @@ namespace ManagedFinanceApi.Data.Yahoo
         /// <returns>The matching stocks</returns>
         public async Task<IEnumerable<Stock>> SearchStocksAsync(string searchTerm)
         {
-            var yahooStockSearchUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockSearchUrl, searchTerm));
+            var yahooStockSearchUrl = new Uri(string.Format(YahooDataEndPoints.StockSearchUrl, searchTerm));
 
             //Get data
             var rawJson = await yahooStockSearchUrl.GetAnnonymousTypeFromJsonResponseAsync();
@@ -35,7 +36,7 @@ namespace ManagedFinanceApi.Data.Yahoo
         /// <returns></returns>
         public async Task<IEnumerable<StockQuote>> GetStockQuoteAsync(IEnumerable<string> stockCodes)
         {
-            var yahooStockQuoteUrl = new Uri(string.Format(Constants.YahooDataEndPoints.StockQuoteUrl, stockCodes.ToCsvString()));
+            var yahooStockQuoteUrl = new Uri(string.Format(YahooDataEndPoints.StockQuoteUrl, stockCodes.ToCsvString()));
 
             //Get data
             var rawJson = await yahooStockQuoteUrl.GetAnnonymousTypeFromJsonResponseAsync();

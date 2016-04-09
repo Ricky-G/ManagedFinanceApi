@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ManagedFinanceApi.Data;
+using ManagedFinanceApi.Data.Interfaces;
 using ManagedFinanceApi.Data.Yahoo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

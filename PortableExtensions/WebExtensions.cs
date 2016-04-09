@@ -27,7 +27,7 @@ namespace PortableExtensions
                 return response;
             }
         }
-
+        
         /// <summary>
         /// Calls the url and returns a given type from the json response
         /// </summary>

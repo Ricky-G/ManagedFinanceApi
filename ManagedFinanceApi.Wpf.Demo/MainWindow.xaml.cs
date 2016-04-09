@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ManagedFinanceApi.Wpf.DemoApp
+namespace ManagedFinanceApi.Wpf.Demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

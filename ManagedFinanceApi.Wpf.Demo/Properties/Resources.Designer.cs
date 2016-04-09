@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ManagedFinanceApi.Wpf.DemoApp.Properties
+namespace ManagedFinanceApi.Wpf.Demo.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace ManagedFinanceApi.Wpf.DemoApp.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ManagedFinanceApi.Wpf.DemoApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ManagedFinanceApi.Wpf.Demo.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

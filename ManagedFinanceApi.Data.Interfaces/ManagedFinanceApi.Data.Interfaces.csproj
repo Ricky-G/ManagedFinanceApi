@@ -5,18 +5,16 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FA658699-83BB-4800-9758-CE09EC87C6F4}</ProjectGuid>
+    <ProjectGuid>{2483E4CC-DBDA-4EDD-AC25-CAE9ACD9D87C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedFinanceApi.Service</RootNamespace>
-    <AssemblyName>ManagedFinanceApi.Service</AssemblyName>
+    <RootNamespace>ManagedFinanceApi.Data.Interfaces</RootNamespace>
+    <AssemblyName>ManagedFinanceApi.Data.Interfaces</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,34 +35,16 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\ManagedFinanceApi.Data.Interfaces\ManagedFinanceApi.Data.Interfaces.csproj">
-      <Project>{2483E4CC-DBDA-4EDD-AC25-CAE9ACD9D87C}</Project>
-      <Name>ManagedFinanceApi.Data.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
-      <Project>{297b71b5-9601-4c78-bac6-3ad09a19c77c}</Project>
-      <Name>ManagedFinanceApi.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
-      <Project>{bcfaf7e6-a9e6-4091-a634-fad7d2ff525c}</Project>
+      <Project>{BCFAF7E6-A9E6-4091-A634-FAD7D2FF525C}</Project>
       <Name>ManagedFinanceApi.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StockService.cs" />
+    <Compile Include="IStockInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

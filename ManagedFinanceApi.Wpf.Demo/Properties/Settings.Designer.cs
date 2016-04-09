@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ManagedFinanceApi.Wpf.DemoApp.Properties
+namespace ManagedFinanceApi.Wpf.Demo.Properties
 {
 
 

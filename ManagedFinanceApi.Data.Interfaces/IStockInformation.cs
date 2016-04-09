@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using ManagedFinanceApi.Models;
 
-namespace ManagedFinanceApi.Data
+namespace ManagedFinanceApi.Data.Interfaces
 {
     /// <summary>
     ///     The stock search interface
