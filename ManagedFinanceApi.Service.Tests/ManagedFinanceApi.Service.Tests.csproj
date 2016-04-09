@@ -47,10 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedFinanceApi.Data.Interfaces\ManagedFinanceApi.Data.Interfaces.csproj">
-      <Project>{2483E4CC-DBDA-4EDD-AC25-CAE9ACD9D87C}</Project>
-      <Name>ManagedFinanceApi.Data.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ManagedFinanceApi.Data.Yahoo\ManagedFinanceApi.Data.Yahoo.csproj">
       <Project>{7AB9E4D7-8EA5-4989-A2E4-E1743031A73A}</Project>
       <Name>ManagedFinanceApi.Data.Yahoo</Name>

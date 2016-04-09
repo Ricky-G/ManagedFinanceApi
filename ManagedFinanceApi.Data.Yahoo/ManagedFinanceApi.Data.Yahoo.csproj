@@ -35,10 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\ManagedFinanceApi.Data.Interfaces\ManagedFinanceApi.Data.Interfaces.csproj">
-      <Project>{2483E4CC-DBDA-4EDD-AC25-CAE9ACD9D87C}</Project>
-      <Name>ManagedFinanceApi.Data.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
       <Project>{297B71B5-9601-4C78-BAC6-3AD09A19C77C}</Project>
       <Name>ManagedFinanceApi.Data</Name>

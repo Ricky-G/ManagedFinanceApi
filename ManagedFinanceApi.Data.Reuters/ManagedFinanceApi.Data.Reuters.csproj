@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2483E4CC-DBDA-4EDD-AC25-CAE9ACD9D87C}</ProjectGuid>
+    <ProjectGuid>{7785586A-E9A9-4353-BF0D-BDA03CBA9139}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedFinanceApi.Data.Interfaces</RootNamespace>
-    <AssemblyName>ManagedFinanceApi.Data.Interfaces</AssemblyName>
+    <RootNamespace>ManagedFinanceApi.Data.Reuters</RootNamespace>
+    <AssemblyName>ManagedFinanceApi.Data.Reuters</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,14 +35,18 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
+      <Project>{297B71B5-9601-4C78-BAC6-3AD09A19C77C}</Project>
+      <Name>ManagedFinanceApi.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
       <Project>{BCFAF7E6-A9E6-4091-A634-FAD7D2FF525C}</Project>
       <Name>ManagedFinanceApi.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IStockInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockInformation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
