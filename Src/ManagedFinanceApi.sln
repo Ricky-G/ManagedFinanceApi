@@ -38,12 +38,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedFinanceApi.Service",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{5D4BAD9F-8118-45A8-959B-E3835C1ED101}"
 	ProjectSection(SolutionItems) = preProject
-		_SolutionItems\.travis.yml = _SolutionItems\.travis.yml
 		_SolutionItems\DataCodeMap.dgml = _SolutionItems\DataCodeMap.dgml
 		_SolutionItems\OverallCodeMap.dgml = _SolutionItems\OverallCodeMap.dgml
 		README.md = README.md
 		_SolutionItems\Sources.txt = _SolutionItems\Sources.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{BCF406EE-3F4F-498C-9011-568BEEE51BCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -232,5 +233,6 @@ Global
 		{7785586A-E9A9-4353-BF0D-BDA03CBA9139} = {281E8695-A9C2-47C5-A986-6773D8F58792}
 		{7AB9E4D7-8EA5-4989-A2E4-E1743031A73A} = {281E8695-A9C2-47C5-A986-6773D8F58792}
 		{FA658699-83BB-4800-9758-CE09EC87C6F4} = {72E4FC86-8DF5-44C5-992B-9C4FD6863904}
+		{BCF406EE-3F4F-498C-9011-568BEEE51BCC} = {5D4BAD9F-8118-45A8-959B-E3835C1ED101}
 	EndGlobalSection
 EndGlobal
