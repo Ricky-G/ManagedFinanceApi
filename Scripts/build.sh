@@ -1,1 +1,1 @@
-xbuild /p:Configuration=Release src/src/SManagedFinanceApi.sln /p:TargetFrameworkVersion="v4.5" /p:DebugSymbols=False
+xbuild /p:Configuration=Release Src/ManagedFinanceApi.sln /p:TargetFrameworkVersion="v4.5" /p:DebugSymbols=False
