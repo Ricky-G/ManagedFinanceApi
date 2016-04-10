@@ -19,3 +19,4 @@ The vision for this library is to fetch data and/or analyse:
 
 Others such as options, bonds etc to be added as the library evolves.
 
+[![Build Status](https://travis-ci.org/RickyGAkl/ManagedFinanceApi.svg?branch=master)](https://travis-ci.org/RickyGAkl/ManagedFinanceApi)
