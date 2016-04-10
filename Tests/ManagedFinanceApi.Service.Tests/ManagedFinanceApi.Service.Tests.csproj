@@ -47,24 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedFinanceApi.Data.Yahoo\ManagedFinanceApi.Data.Yahoo.csproj">
-      <Project>{7AB9E4D7-8EA5-4989-A2E4-E1743031A73A}</Project>
-      <Name>ManagedFinanceApi.Data.Yahoo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
-      <Project>{297b71b5-9601-4c78-bac6-3ad09a19c77c}</Project>
-      <Name>ManagedFinanceApi.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
-      <Project>{bcfaf7e6-a9e6-4091-a634-fad7d2ff525c}</Project>
-      <Name>ManagedFinanceApi.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ManagedFinanceApi.Service\ManagedFinanceApi.Service.csproj">
-      <Project>{fa658699-83bb-4800-9758-ce09ec87c6f4}</Project>
-      <Name>ManagedFinanceApi.Service</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
