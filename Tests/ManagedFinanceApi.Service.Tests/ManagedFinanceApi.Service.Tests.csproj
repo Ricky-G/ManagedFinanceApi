@@ -52,14 +52,26 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
+      <Project>{bcfaf7e6-a9e6-4091-a634-fad7d2ff525c}</Project>
+      <Name>ManagedFinanceApi.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\ManagedFinanceApi.Data.Yahoo\ManagedFinanceApi.Data.Yahoo.csproj">
+      <Project>{7ab9e4d7-8ea5-4989-a2e4-e1743031a73a}</Project>
+      <Name>ManagedFinanceApi.Data.Yahoo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
+      <Project>{297B71B5-9601-4C78-BAC6-3AD09A19C77C}</Project>
+      <Name>ManagedFinanceApi.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service\ManagedFinanceApi.Service\ManagedFinanceApi.Service.csproj">
+      <Project>{FA658699-83BB-4800-9758-CE09EC87C6F4}</Project>
+      <Name>ManagedFinanceApi.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
-  </Target>
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

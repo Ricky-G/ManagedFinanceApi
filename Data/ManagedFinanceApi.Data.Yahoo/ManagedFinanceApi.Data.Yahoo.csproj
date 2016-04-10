@@ -40,12 +40,26 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ManagedFinanceApi.Models\ManagedFinanceApi.Models.csproj">
+      <Project>{BCFAF7E6-A9E6-4091-A634-FAD7D2FF525C}</Project>
+      <Name>ManagedFinanceApi.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PortableExtensions\PortableExtensions.csproj">
+      <Project>{1FB31E95-DE68-4B34-9341-31331E295467}</Project>
+      <Name>PortableExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
+      <Project>{297B71B5-9601-4C78-BAC6-3AD09A19C77C}</Project>
+      <Name>ManagedFinanceApi.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
