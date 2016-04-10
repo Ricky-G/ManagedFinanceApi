@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/RickyGAkl/ManagedFinanceApi.svg?branch=master)](https://travis-ci.org/RickyGAkl/ManagedFinanceApi)
+[![Build status](https://ci.appveyor.com/api/projects/status/b1d2ljcekfjkb9us/branch/master?svg=true)](https://ci.appveyor.com/project/RickyGAkl/managedfinanceapi/branch/master)
+
+
 # ManagedFinanceApi
 A .NET C# universal/portable library responsible for fetching all things financial information from various sources on the web.
 

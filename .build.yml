@@ -1,7 +1,4 @@
 language: csharp
-mono:
-  - latest
-env: VERSION=0.3.10
 solution: Src/ManagedFinanceApi.sln
 
 before_script:
