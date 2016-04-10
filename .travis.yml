@@ -2,13 +2,13 @@ language: csharp
 mono:
   - latest
 env: VERSION=0.3.10
-solution: src/SManagedFinanceApi.sln
+solution: Src/ManagedFinanceApi.sln
 
 before_script:
- - chmod +x ./scripts/build.sh
+ - chmod +x ./Scripts/build.sh
  
 script:
-  - ./scripts/build.sh
+  - ./Scripts/build.sh
 
 after_failure:
-  - ls -LR src/packages
+  - ls -LR Src/packages
