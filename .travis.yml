@@ -1,2 +1,14 @@
 language: csharp
-solution: ManagedFinanceApi.sln
+mono:
+  - latest
+env: VERSION=0.3.10
+solution: src/SManagedFinanceApi.sln
+
+before_script:
+ - chmod +x ./scripts/build.sh
+ 
+script:
+  - ./scripts/build.sh
+
+after_failure:
+  - ls -LR src/packages
