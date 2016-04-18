@@ -15,8 +15,8 @@ The vision for this library is to fetch data and/or analyse:
 3.	Stock information charting
 4.	Stock news
 5.	Stock research
-6.	Exchange information and news
-7.	Stock screener
+6.	Stock Exchange information and news
+7.	Heuristic stock screener
 8.	Portfolio management
 9.	Future stock price prediction engine
 
