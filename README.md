@@ -9,6 +9,7 @@ Initially the data sources will be Yahoo & Google finance, with more to come lat
 This library should be compatible to run on any Windows device.
 
 The vision for this library is to fetch data and/or analyse:
+
 1.	Stock lookup and stock prices
 2.	Stock historical prices
 3.	Stock information charting
