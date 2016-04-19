@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ManagedFinanceApi.Wpf.Demo.Helpers;
 
 namespace ManagedFinanceApi.Wpf.Demo
 {
@@ -23,6 +24,8 @@ namespace ManagedFinanceApi.Wpf.Demo
         public MainWindow()
         {
             InitializeComponent();
+            
+            StockSearchAutoComplete.Provider = new StockSearchSuggestionProvider();
         }
     }
 }

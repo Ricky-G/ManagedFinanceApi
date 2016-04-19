@@ -24,5 +24,15 @@
         ///     The exhange name this stock belongs too
         /// </summary>
         public string ExchangeName { get; set; }
+
+        /// <summary>
+        /// Friendly string concatanating the exchange code and name
+        /// </summary>
+        public string StockInformation => Code + "." + ExchangeCode;
+
+        /// <summary>
+        /// Friendly string concatanating the exchange code and name
+        /// </summary>
+        public string ExchangeInformation => ExchangeCode + " - " + ExchangeName;
     }
 }

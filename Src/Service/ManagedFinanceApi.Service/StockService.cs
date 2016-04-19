@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using ManagedFinanceApi.Data.Interfaces;
+using ManagedFinanceApi.Data.Yahoo;
 using ManagedFinanceApi.Models;
 
 namespace ManagedFinanceApi.Service
@@ -19,6 +20,15 @@ namespace ManagedFinanceApi.Service
         public StockService(IStockInformation stockSearch)
         {
             _stockSearch = stockSearch;
+        }
+
+        /// <summary>
+        /// Default ctor
+        /// </summary>
+        public StockService()
+        {
+            //TODO: get rid of this and put inplace the mechanism for selecting the datasource
+            _stockSearch = new StockInformation();
         }
 
         /// <summary>

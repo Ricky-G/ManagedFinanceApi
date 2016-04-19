@@ -47,6 +47,10 @@
       <Project>{BCFAF7E6-A9E6-4091-A634-FAD7D2FF525C}</Project>
       <Name>ManagedFinanceApi.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Data\ManagedFinanceApi.Data.Yahoo\ManagedFinanceApi.Data.Yahoo.csproj">
+      <Project>{7AB9E4D7-8EA5-4989-A2E4-E1743031A73A}</Project>
+      <Name>ManagedFinanceApi.Data.Yahoo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\ManagedFinanceApi.Data\ManagedFinanceApi.Data.csproj">
       <Project>{297B71B5-9601-4C78-BAC6-3AD09A19C77C}</Project>
       <Name>ManagedFinanceApi.Data</Name>
@@ -59,7 +63,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
-  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
